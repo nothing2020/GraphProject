@@ -1,8 +1,7 @@
+all = main.c search.c stats.c search.h stats.h mystring.h
 search-cli: main.o
-	cc -o search-cli main.o
+	gcc main.o -o search-cli
+main.o: $(all)
+	gcc -std=c99 -c main.c
 
-main.o:
-	cc -c main.c search.c stats.c
-
-clean:
-
+make clean:
