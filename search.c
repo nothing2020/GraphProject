@@ -39,9 +39,11 @@ int* shortestPath(int u, int v, char algorithm[], char name[])
       	}
 	}
 		
-	else{
+	else if(*algorithm == 'B'){
 		path = BFS(u, v);
 	}
+	else
+	path = int* Dijkstra(int u, int v);
 	fclose(fp);
 	return path;
 } 
@@ -139,4 +141,8 @@ int* BFS(int u, int v)
 		}
 	}
 	return path;
+}
+int* Dijkstra(int u, int v){
+	
+	
 }

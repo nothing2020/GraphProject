@@ -28,6 +28,7 @@ int main (int argc,char **argv)
 			}
 			int* path = shortestPath(u, v, argv[4], argv[2]);
 			int* apath = (int*)malloc(MAXSIZE*sizeof(int));
+			
 			int d = 0,k;
 			k = v;
 			apath[d] = v;
